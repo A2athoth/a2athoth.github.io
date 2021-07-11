@@ -1,0 +1,193 @@
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    z-index: -1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#loginForm,
+#greeting,
+#clock,
+#weather {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    margin-top: 0px;
+    z-index: 1;
+}
+
+#clock > span {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 60px;
+    text-align: center;
+    border-radius: 15px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+#todo {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 3;
+    width: 230px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 7px;
+}
+#todo h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#todo > form {
+    width: 100%;
+}
+#todo input:first-child {
+    display: block;
+    width: 90%;
+    margin: auto;
+    background: none;
+    color: black;
+    font-size: 16px;
+}
+#todo input[type="submit"] {
+    display: none;
+}
+#todoList {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#todoList > li {
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid darkgray;
+    position: relative;
+}
+#todoList > li > button {
+    border: none;
+    background: none;
+    color: red;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+#weather {
+    margin-top: 60vh;
+    z-index: 1;
+    display: block;
+    text-align: center;
+}
+
+#weather div {
+    margin: 20px 0;
+}
+
+#weather div:first-child span {
+    display: inline-block;
+    height: 100%;
+}
+
+#weather span {
+    height: auto;
+    border: none;
+    padding: 3px 7px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#weather div:last-child span {
+    font-size: 15px;
+}
+
+#loginForm,
+#greeting {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    margin-top: -50vh;
+}
+
+#greeting {
+    background: none;
+}
+
+#loginForm > *,
+#greeting > * {
+    height: 60px;
+}
+
+#loginForm > input[type="text"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 250px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 15px 15px;
+}
+
+#loginForm > button[type="submit"] {
+    border: none;
+    margin-left: 5px;
+    padding: 0 5px;
+    text-align: center;
+    border-radius: 20%;
+}
+
+#greeting > span:first-child {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 15px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+#logoutButton {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2px 5px 10px 5px;
+    width: 100px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 3;
+}
