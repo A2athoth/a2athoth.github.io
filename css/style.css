@@ -110,6 +110,7 @@ body {
     padding: 5px 10px;
     border-bottom: 1px solid darkgray;
     position: relative;
+    text-align:left;
 }
 #todoList > li > button {
     border: none;
