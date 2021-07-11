@@ -7,3 +7,5 @@ features
 4. Todo list save with localStorage
 5. Random background images(sources from imgur)
 6. Weather with geolocation(openweathermap.org api)
+
+* not mobile friendly
