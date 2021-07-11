@@ -2,8 +2,21 @@ const todoForm = document.querySelector("#todoForm");
 const todoInput = document.querySelector("#todoForm input:first-child");
 const todoList = document.querySelector("#todoList");
 const TODOS_KEY = "todos";
+const todoDeleteAll = document.querySelector("#todo h1 span");
 
 let todos = [];
+
+function deleteAll() {
+    const lists = document.querySelectorAll("#todoList > li");
+    lists.forEach((li) => {
+        li.remove();
+    });
+
+    todos = todos.filter((item) => {
+        return false; // delete all
+    });
+    saveTodos(todos);
+}
 
 function deleteTodo(event) {
     const li = event.target.parentElement;
@@ -80,6 +93,14 @@ function handleTodoSelected(event) {
 }
 
 todoForm.addEventListener("submit", handleTodoSubmit);
+todoDeleteAll.addEventListener("click", () => {
+    const confirmed = confirm("Are you sure?");
+    if (confirmed === true) {
+        deleteAll();
+    } else {
+        alert("Delete is canceled.");
+    }
+});
 
 const savedTodos = localStorage.getItem(TODOS_KEY);
 
