@@ -1,0 +1,51 @@
+.user-comp {
+  margin: 10px 0;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.user-comp,
+.user-comp__column:first-child {
+  display: flex;
+  align-items: center;
+}
+.user-comp__avatar {
+  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+}
+.user-comp__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.user-comp__subtitle {
+  margin-top: 8px;
+  font-size: 15px;
+  color: var(--font-gray);
+}
+.user-comp__subtitle i {
+  color: orangered;
+}
+.user-comp__chat-number {
+  color: var(--font-gray);
+}
+
+.user-comp__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.user-comp__title--not-bold {
+  font-weight: normal;
+}
+
+.user-comp__time {
+  font-size: 0.7em;
+  color: var(--font-gray);
+}
+
+.user-comp__notification {
+  margin: 3px auto 0;
+  width: 18px;
+  height: 18px;
+}

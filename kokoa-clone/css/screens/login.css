@@ -1,0 +1,91 @@
+.welcome-header {
+  margin: 90px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header h1 {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.welcome-header p {
+  width: 60%;
+  font-size: 12px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  padding: 0 25px;
+}
+#login-form > * {
+  width: 100%;
+  margin: 5px 0;
+  padding: 20px 0;
+  font-size: 20px;
+}
+#login-form input {
+  border: none;
+  border-bottom: var(--main-border);
+  padding: 25px 0;
+  color: black;
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  font-size: 20px;
+  color: pink;
+}
+#login-form input:focus {
+  border-bottom: 2px solid hotpink;
+}
+#login-form input:focus-visible {
+  outline: none;
+}
+#login-form input:first-child {
+}
+#login-form input:nth-child(2) {
+}
+#login-form input:nth-child(3) {
+  margin-top: 40px;
+  border: none;
+  background-color: pink;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+#login-form input:nth-child(3):hover {
+  color: #fff;
+  background-color: hotpink;
+}
+#login-form a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+}
+#login-form a:nth-child(4) {
+  background-color: pink;
+  transition: background-color 0.3s ease-in-out;
+}
+#login-form a:last-child {
+  margin-top: 20px;
+  font-size: 14px;
+  color: pink;
+}
+#login-form a:hover,
+#login-form a:active {
+  text-decoration: none;
+  color: #fff;
+  background-color: hotpink;
+}
+#login-form a:last-child:hover,
+#login-form a:last-child:active {
+  text-decoration: none;
+  color: pink;
+  background-color: #fff;
+}

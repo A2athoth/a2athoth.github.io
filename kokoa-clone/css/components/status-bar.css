@@ -1,0 +1,33 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+.status-bar__column {
+  width: 33%;
+  font-size: 15px;
+}
+.status-bar__column:nth-child(2) {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) span {
+  font-weight: bolder;
+}
+.status-bar__column .fa-battery-half {
+  margin: 0 5px;
+}

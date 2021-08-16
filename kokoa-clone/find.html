@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Cacao Talk</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-half"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <a href="./setting.html"
+          ><span><i class="fas fa-cog fa-lg"></i></span
+        ></a>
+      </div>
+    </header>
+
+    <main class="wrapper find-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <span><i class="fas fa-qrcode fa-lg"></i></span>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <span><i class="far fa-address-book fa-lg"></i></span>
+          <span>Add by Contacts </span>
+        </div>
+        <div class="icon-row__icon">
+          <span><i class="fas fa-fingerprint fa-lg"></i></span>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <span><i class="far fa-envelope fa-lg"></i></span>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img
+                src="https://avatars.githubusercontent.com/u/41228325"
+                alt="open-post-img"
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://avatars.githubusercontent.com/u/41228325"
+                alt="open-post-img"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i>
+                <span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img
+                src="https://avatars.githubusercontent.com/u/41228325"
+                alt="open-post-img"
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://avatars.githubusercontent.com/u/41228325"
+                alt="open-post-img"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart"></i>
+                <span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="./friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="./chats.html">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comments fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="./find.html">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="./more.html">
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">Your screen is too big...</div>
+  </body>
+</html>
